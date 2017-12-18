@@ -51,7 +51,7 @@ class ProductController extends FOSRestController
         $entityManager->persist($form->getData());
         $entityManager->flush();
 
-        return 'Producto creado correctamente.';
+        return 'Product created successfully';
     }
 
     /**
@@ -71,7 +71,7 @@ class ProductController extends FOSRestController
         $entityManager->persist($form->getData());
         $entityManager->flush();
 
-        return 'Producto actualizado correctamente.';
+        return 'Product updated successfully';
     }
 
     /**
@@ -84,7 +84,7 @@ class ProductController extends FOSRestController
         $entityManager->remove($product);
         $entityManager->flush();
 
-        return 'Producto eliminado correctamente.';
+        return 'Product deleted successfully';
     }
 
     /**
